@@ -8,6 +8,7 @@
   --gray-dark: #AAAAAA;
   --gray-light: #F9F9F9;
   --gray-mid: #EEEEEE;
+  --border: #e5e7eb;
 }
 
 @theme inline {
@@ -18,11 +19,12 @@
   --color-gray-dark: var(--gray-dark);
   --color-gray-light: var(--gray-light);
   --color-gray-mid: var(--gray-mid);
+  --color-border: var(--border);
   --font-sans: var(--font-inter);
 }
 
 body {
-  background: #F9F9F9;
+  background: #ffffff;
   color: #171717;
   font-family: 'Inter', sans-serif;
 }
@@ -34,28 +36,26 @@ body {
 }
 
 .cv-table thead th {
-  padding: 12px 16px;
+  padding: 10px 16px;
   text-align: left;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #555;
-  background: var(--gray-light);
-  border-bottom: 2px solid var(--gray-mid);
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  background: #F9F9F9;
+  border-bottom: 1px solid var(--border);
   white-space: nowrap;
 }
 
 .cv-table tbody td {
-  padding: 12px 16px;
+  padding: 10px 16px;
   font-size: 14px;
   color: #333;
-  border-bottom: 1px solid var(--gray-mid);
-  vertical-align: top;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
 }
 
 .cv-table tbody tr:hover {
-  background: var(--gray-light);
+  background: #F9F9F9;
 }
 
 /* Custom scrollbar */
@@ -64,9 +64,9 @@ body {
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #e5e7eb;
+  background: #f3f4f6;
 }
 ::-webkit-scrollbar-thumb {
   background: #AAAAAA;
-  border-radius: 2px;
+  border-radius: 4px;
 }
